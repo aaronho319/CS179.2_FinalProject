@@ -1,0 +1,87 @@
+#map {
+    height: 100%;
+    width: 100%;
+    grid-area: map;
+  }
+  /* Optional: Makes the sample page fill the window. */
+html, body {
+    font-family: Lato;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown {
+    background-color: black;
+    grid-area: dropdown;
+}
+
+#menu {
+    /* position: absolute; */
+    display: grid;
+    top: 10px;
+    /* z-index: 5; */
+    height: 7vh;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #999;
+    font-family: 'Roboto','sans-serif';
+    line-height: 40px;
+    grid-template-areas:
+        'address address submit'
+        'address address submit';
+}
+
+#address {
+    border-style: groove;
+    height: 70%;
+    width: 90%;
+    grid-area: address;
+    font-size: 10pt;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#submit {
+    height: 100%;
+    width: 60%;
+    grid-area: submit;
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    cursor: pointer;
+    text-align: center;
+    background-color: #2196F3;
+    border-radius: 50%;
+    background: url("src/search.png");
+    background-size: 100%;
+}
+
+#submit :hover {background: #0b7dda;}
+
+#weather {
+    background-color: lightgrey;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'map map map map map map dropdown'
+        'map map map map map map dropdown'
+        'map map map map map map dropdown';
+    background-color: #2196F3;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container > div {
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
